@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./img/material-icons/material-icons.css">
     <link rel="stylesheet" href="styles.css" />
     <title>To-Do List</title>
   </head>
   <body>
     <h2 class="title">To-Do List</h2>
-    <form class="editor js-editor">
-      <input class="editor__input" type="text" name="text" />
+    <form class="editor js-editor" autocomplete="off">
+      <input
+        class="editor__input"
+        type="text"
+        name="text"
+        placeholder="What do you need to do?"
+      />
       <button class="button" type="submit">Add</button>
     </form>
     <ul class="todo-list js-todo-list"></ul>
+    <img src="" class="done-icon hide">
 
     <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
     <script src="app.js"></script>
